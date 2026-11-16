@@ -70,10 +70,10 @@
   .bar .wrap{display:flex; align-items:center; justify-content:space-between; height:60px}
   .sig{font-family:var(--mono); font-size:13px; letter-spacing:.14em; text-transform:uppercase; font-weight:600}
   .sig b{color:var(--amber)}
-  nav.links{display:flex; gap:26px; font-family:var(--mono); font-size:12.5px; letter-spacing:.1em; text-transform:uppercase}
+  nav.links{display:flex; gap:22px; font-family:var(--mono); font-size:12.5px; letter-spacing:.1em; text-transform:uppercase}
   nav.links a{color:var(--muted); text-decoration:none; transition:color .18s}
   nav.links a:hover{color:var(--ink)}
-  @media (max-width:720px){ nav.links{display:none} }
+  @media (max-width:980px){ nav.links{display:none} }
 
   /* ---- hero ---- */
   .hero{position:relative; padding:88px 0 76px; border-bottom:1px solid var(--line); overflow:hidden}
@@ -198,6 +198,9 @@
   .contact .cta-row{justify-content:center}
   footer{padding:30px 0 46px; text-align:center; font-family:var(--mono); font-size:11.5px; letter-spacing:.1em; color:var(--faint)}
   footer .wrap{display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px}
+  .foot-links{display:flex; flex-wrap:wrap; gap:16px}
+  .foot-links a{color:var(--muted); text-decoration:none; transition:color .18s}
+  .foot-links a:hover{color:var(--amber)}
 
   /* theme toggle */
   .toggle{background:transparent; border:1px solid var(--line-strong); color:var(--muted); cursor:pointer;
@@ -217,7 +220,6 @@
 </head>
 <body>
 
-
 <header class="bar">
   <div class="wrap">
     <div class="sig">DYLAN <b>//</b> SVEHLA</div>
@@ -226,6 +228,9 @@
       <a href="#capabilities">Capabilities</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
+      <a href="resume.html" target="_blank" rel="noopener">Résumé</a>
+      <a href="https://github.com/DylanJSvehla" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/dylan-svehla-78767821a/" target="_blank" rel="noopener">LinkedIn</a>
     </nav>
     <button class="toggle" id="themeBtn" aria-label="Toggle color theme">Theme</button>
   </div>
@@ -233,7 +238,7 @@
 
 <section class="hero" style="border-bottom:1px solid var(--line)">
   <div class="wrap">
-    <span class="eyebrow">Solo Game Developer · Unreal Engine 5</span>
+    <span class="eyebrow">Gameplay Programmer · Technical Designer — Unreal Engine 5 · C++</span>
     <h1>I build entire games — <span class="hl">systems, art pipeline, and all.</span></h1>
     <p class="lead">I'm Dylan Svehla, a game designer-engineer who owns features end-to-end — from C++ gameplay systems to the character rig to the audio that sells them. Working solo across three UE5 games, I've had to master every discipline, and built the kind of deep, interlocking mechanics that usually take a team. It's not on a studio's resume yet — it's running in-engine, and I'll show you.</p>
 
@@ -246,7 +251,8 @@
 
     <div class="cta-row">
       <a class="btn primary" href="#work">View the work →</a>
-      <a class="btn ghost" href="mailto:dylanjsvehla@gmail.com">Get in touch</a>
+      <a class="btn ghost" href="resume.html" target="_blank" rel="noopener">Résumé (PDF)</a>
+      <a class="btn ghost" href="mailto:dylanjsvehla@gmail.com">dylanjsvehla@gmail.com</a>
     </div>
   </div>
 </section>
@@ -316,7 +322,7 @@
         <h3>Century</h3>
         <p class="hook">An extraction-survival shooter where you scavenge a hostile frontier, haul loot home, and rebuild — the deepest single thing I've built.</p>
         <span class="pill"><span class="dot"></span>In Development · UE 5.8</span>
-        <span class="pill">Solo Developer</span>
+        <span class="pill">Solo — C++ · Blueprint · Tech Art</span>
         <ul class="syslist">
           <li><b>Grid inventory &amp; equipment</b> — STALKER-style weight/space management, loot, stashing, context actions.</li>
           <li><b>Crafting &amp; tech progression</b> — data-driven recipes, furnaces/smelting, a tech tree gated by player level.</li>
@@ -360,7 +366,7 @@
         <h3>Call of the Mountains</h3>
         <p class="hook">A brutal, gore-soaked Souls-like — lock-on duels, a Faith economy you lose on death and reclaim where you fell, and "the Forgotten" waiting in ambush.</p>
         <span class="pill"><span class="dot"></span>UE 5.6</span>
-        <span class="pill">Solo Developer</span>
+        <span class="pill">Solo — C++ · Blueprint · Gore Tech</span>
         <ul class="syslist">
           <li><b>Faith economy</b> — Souls-style currency earned from kills, lost on death, recoverable from where you died.</li>
           <li><b>Lock-on melee combat</b> — target locking, parries, poise &amp; stagger, finisher kills, weapon combos.</li>
@@ -378,7 +384,7 @@
         <h3>SteelCurtain</h3>
         <p class="hook">A grimdark "iron and ash" RPG with the depth of a classic MMO — classes, talents, threat-driven combat, and a living day/night world.</p>
         <span class="pill"><span class="dot"></span>In Development</span>
-        <span class="pill">Solo Developer</span>
+        <span class="pill">Solo — C++ · Blueprint · Replication</span>
         <ul class="syslist">
           <li><b>Class, talent &amp; subclass systems</b> — specializations unlocking at level thresholds, with saved builds.</li>
           <li><b>Threat / aggro combat</b> — a full tank-and-spank model: taunts, threat tables, leashing, evade.</li>
@@ -443,7 +449,9 @@
     <p class="lead">That's the job I've been doing solo for five years. Reach out — I'll walk you through any system here, live in the editor.</p>
     <div class="cta-row">
       <a class="btn primary" href="mailto:dylanjsvehla@gmail.com">dylanjsvehla@gmail.com</a>
-      <a class="btn ghost" href="#work">Back to work</a>
+      <a class="btn ghost" href="https://github.com/DylanJSvehla" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/dylan-svehla-78767821a/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="resume.html" target="_blank" rel="noopener">Résumé (PDF)</a>
     </div>
   </div>
 </section>
@@ -451,7 +459,12 @@
 <footer>
   <div class="wrap">
     <span>DYLAN JAMES SVEHLA</span>
-    <span>GAME DEVELOPER · UNREAL ENGINE 5</span>
+    <span class="foot-links">
+      <a href="mailto:dylanjsvehla@gmail.com">EMAIL</a>
+      <a href="https://github.com/DylanJSvehla" target="_blank" rel="noopener">GITHUB</a>
+      <a href="https://www.linkedin.com/in/dylan-svehla-78767821a/" target="_blank" rel="noopener">LINKEDIN</a>
+      <a href="resume.html" target="_blank" rel="noopener">RÉSUMÉ</a>
+    </span>
     <span>DUBLIN, CA</span>
   </div>
 </footer>
@@ -492,6 +505,5 @@
     if(thumbs.length) setHero(0);
   });
 </script>
-
 </body>
 </html>

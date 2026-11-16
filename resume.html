@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dylan James Svehla — Resume</title>
+<style>
+  :root{
+    --ink:#1A1C22; --muted:#4A4D55; --faint:#73767E;
+    --amber:#B5620E; --line:#D9D6CF; --paper:#FFFFFF;
+    --mono:"Cascadia Mono",Consolas,"SF Mono",ui-monospace,Menlo,monospace;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0; background:#EDEBE6}
+  body{font-family:var(--sans); color:var(--ink); line-height:1.5; font-size:14px}
+  .sheet{
+    max-width:800px; margin:28px auto; background:var(--paper); padding:46px 52px;
+    box-shadow:0 10px 40px rgba(0,0,0,.12); border-radius:3px;
+  }
+  .toolbar{max-width:800px; margin:22px auto 0; text-align:center}
+  .toolbar button{
+    font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase;
+    background:var(--amber); color:#fff; border:0; padding:11px 22px; border-radius:4px; cursor:pointer; font-weight:600;
+  }
+  .toolbar button:hover{filter:brightness(1.08)}
+  .toolbar p{font-size:12px; color:#6a6a6a; margin:10px 0 0; font-family:var(--mono); letter-spacing:.03em}
+
+  header{border-bottom:2px solid var(--ink); padding-bottom:16px; margin-bottom:22px}
+  header h1{font-size:30px; letter-spacing:-.02em; margin:0; font-weight:800}
+  header .role{font-family:var(--mono); font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--amber); font-weight:600; margin-top:7px}
+  header .contact{font-family:var(--mono); font-size:11.5px; color:var(--muted); margin-top:11px; letter-spacing:.02em; line-height:1.9}
+  header .contact a{color:var(--muted); text-decoration:none}
+  header .contact .sep{color:var(--line); margin:0 8px}
+
+  section{margin-top:22px}
+  h2{font-family:var(--mono); font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--amber);
+     margin:0 0 12px; padding-bottom:6px; border-bottom:1px solid var(--line); font-weight:700}
+  p.summary{margin:0; color:var(--muted); max-width:70ch}
+
+  .skills{display:grid; grid-template-columns:1fr; gap:6px}
+  .skills div{display:grid; grid-template-columns:150px 1fr; gap:14px; align-items:baseline}
+  .skills .k{font-weight:700; font-size:12.5px}
+  .skills .v{color:var(--muted); font-size:13px}
+  @media (max-width:560px){ .skills div{grid-template-columns:1fr; gap:2px} }
+
+  .job{margin-bottom:6px}
+  .job .top{display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap}
+  .job .title{font-weight:700; font-size:15px}
+  .job .when{font-family:var(--mono); font-size:11.5px; color:var(--faint); letter-spacing:.04em}
+  .job .sub{color:var(--muted); font-size:12.5px; margin-top:1px}
+  ul{margin:9px 0 0; padding-left:18px}
+  li{margin-bottom:5px; color:var(--muted)}
+  li b{color:var(--ink)}
+
+  .proj{margin-bottom:16px}
+  .proj .ph{display:flex; justify-content:space-between; align-items:baseline; gap:10px; flex-wrap:wrap}
+  .proj .pname{font-weight:700; font-size:14.5px}
+  .proj .pname .status{font-family:var(--mono); font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--amber); margin-left:8px}
+  .proj .pmeta{font-family:var(--mono); font-size:11px; color:var(--faint); letter-spacing:.05em}
+  .proj p.pdesc{margin:4px 0 0; color:var(--muted); font-size:13px}
+
+  .edu .title{font-weight:700}
+
+  @media print{
+    @page{margin:14mm}
+    html,body{background:#fff}
+    .toolbar{display:none}
+    .sheet{box-shadow:none; margin:0; max-width:100%; padding:0; border-radius:0}
+    body{font-size:11.5px}
+    header h1{font-size:25px}
+    a{color:var(--ink)}
+    section{margin-top:15px}
+    .proj{margin-bottom:10px}
+  }
+</style>
+</head>
+<body>
+  <div class="toolbar">
+    <button onclick="window.print()">⎙ Save as PDF</button>
+    <p>Opens your browser's print dialog — choose "Save as PDF" as the destination.</p>
+  </div>
+
+  <div class="sheet">
+    <header>
+      <h1>Dylan James Svehla</h1>
+      <div class="role">Gameplay Programmer / Technical Designer · Unreal Engine 5</div>
+      <div class="contact">
+        Dublin, CA <span class="sep">·</span> Open to remote <span class="sep">·</span>
+        <a href="mailto:dylanjsvehla@gmail.com">dylanjsvehla@gmail.com</a><br>
+        Portfolio: <a href="https://dylanjsvehla.github.io">dylanjsvehla.github.io</a> <span class="sep">·</span> GitHub: <a href="https://github.com/DylanJSvehla">github.com/DylanJSvehla</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">Self-taught and formally trained, I've spent 5 years building games in Unreal Engine 5. Because I work solo, I've had to master every discipline rather than specialize into one — gameplay C++, UI, AI, technical art, and audio. The result is three UE5 games and 50+ working gameplay systems: real, in-engine proof rather than a list of past employers. Looking for a team where demonstrated range and the ability to own a feature end-to-end matter most.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div><span class="k">Engines / Languages</span><span class="v">Unreal Engine 5 (5.8), C++, Blueprints, Python</span></div>
+        <div><span class="k">Gameplay</span><span class="v">Inventory/equipment, crafting & tech trees, combat, progression, save/serialization, vehicles</span></div>
+        <div><span class="k">AI</span><span class="v">Enemy behavior, aggro/threat systems, group tactics, NavMesh, encounter design</span></div>
+        <div><span class="k">UI</span><span class="v">UMG, HUDs, menus, live SceneCapture paper-dolls, damage feedback</span></div>
+        <div><span class="k">Systems / Design</span><span class="v">Data-driven design, procedural generation, economy & progression tuning</span></div>
+        <div><span class="k">Technical Art</span><span class="v">Blender (incl. headless/Python), auto-rigging, FBX/skeleton troubleshooting</span></div>
+        <div><span class="k">Audio</span><span class="v">Adaptive music systems, surface-aware SFX, local TTS voice pipeline</span></div>
+        <div><span class="k">Workflow</span><span class="v">Server-authoritative / replicated patterns, CLI builds, version control</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Projects</h2>
+
+      <div class="proj">
+        <div class="ph">
+          <span class="pname">Century <span class="status">In Development</span></span>
+          <span class="pmeta">Survival TPS · UE 5.8</span>
+        </div>
+        <p class="pdesc">Extraction-survival shooter. Grid inventory & equipment; data-driven crafting + level-gated tech tree; three hand-built vehicles (car, combat tank, pilotable mech, no Chaos); base building, procedural expeditions, and world travel with saves.</p>
+      </div>
+
+      <div class="proj">
+        <div class="ph">
+          <span class="pname">Call of the Mountains</span>
+          <span class="pmeta">Souls-Like Action RPG · UE 5.6</span>
+        </div>
+        <p class="pdesc">Brutal, gore-soaked Souls-like. Faith economy (currency earned from kills, lost on death, recoverable where you fell); lock-on melee combat with parries, poise/stagger, and finishers; data-driven enemy family ("the Forgotten") incl. molotov-arcing ranged variants; real-time dismemberment and gore tech.</p>
+      </div>
+
+      <div class="proj">
+        <div class="ph">
+          <span class="pname">SteelCurtain <span class="status">In Development</span></span>
+          <span class="pmeta">Dark-Fantasy MMORPG</span>
+        </div>
+        <p class="pdesc">Grimdark RPG with classic-MMO depth. Class/talent/subclass systems with saved builds; threat/aggro combat (taunts, threat tables, leashing); WoW-style paper-doll UI with live SceneCapture; replicated day/night and rare blood-moon events.</p>
+      </div>
+
+      <div class="proj">
+        <div class="ph">
+          <span class="pname">Tooling &amp; Pipeline</span>
+          <span class="pmeta">Python · Blender · Audio</span>
+        </div>
+        <p class="pdesc">Custom auto-rigger and headless Blender animation pipeline; local Bark TTS voice pipeline on local GPU; adaptive music director and surface-aware footstep audio.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="top">
+          <span class="title">Independent Game Developer</span>
+          <span class="when">2021 – Present</span>
+        </div>
+        <div class="sub">Self-directed · Unreal Engine 5</div>
+        <ul>
+          <li>Design and build complete UE5 games solo, owning every discipline: gameplay <b>C++</b>, Blueprints, UI, AI, technical art, and audio.</li>
+          <li>Architect <b>data-driven systems</b> (crafting recipes, tech trees, enemy abilities, events) so content is authored and tuned without code changes.</li>
+          <li>Built custom tooling to unblock a one-person pipeline — an <b>auto-rigger</b> and <b>headless Blender animation-baking</b> scripts that turn raw meshes into game-ready animated characters.</li>
+          <li>Maintain a discipline of <b>verifying features in-engine</b> before considering them complete.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="edu">
+      <h2>Education</h2>
+      <div class="top">
+        <span class="title">Degree in Game Design</span>
+        <span class="when" style="font-family:var(--mono); font-size:11.5px; color:var(--faint)">2021</span>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
